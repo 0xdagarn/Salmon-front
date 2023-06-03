@@ -149,6 +149,13 @@ const Player = styled(ReactPlayer)`
     border-radius: 32px;
 `;
 
+const Video = styled.video`
+    position: absolute;
+    
+    width: 120%;
+    height: 100%;
+`;
+
 export const Slide = React.memo(function (StackedCarouselSlideProps) {
     const {
         data,
@@ -176,16 +183,10 @@ export const Slide = React.memo(function (StackedCarouselSlideProps) {
             <Container onClick={() => {
                 if (!isCenterSlide) swipeTo(slideIndex);
             }}>
-                <Player
-                    url={video}
-                    width='120%'         // 플레이어 크기 (가로)
-                    height='100%'        // 플레이어 크기 (세로)
-                    playing={isCenterSlide}        // 자동 재생 on
-                    muted={true}          // 자동 재생 on
-                    controls={false}       // 플레이어 컨트롤 노출 여부
-                    light={false}         // 플레이어 모드
-                    pip={true}            // pip 모드 설정 여부
-                    poster={'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg'}   // 플레이어 초기 포스터 사진
+                <Video
+                    src={video}
+                    autoPlay={isCenterSlide}       // 자동 재생 on
+                    controls={false}       // 플레이어 컨트롤 노출 여부   // 플레이어 초기 포스터 사진
                     onEnded={() => {
                         swipeTo(slideIndex + 1);
                     }}  // 플레이어 끝났을 때 이벤트
