@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import {StackedCarouselSlideProps} from "react-stacked-center-carousel";
 import "./Slide.css";
 import {useState} from "react";
@@ -98,13 +98,13 @@ const TopBack = styled.div`
 
 const BottomContainer = styled.div`
     position: absolute;
-    
+
     width: 100%;
     height: max-content;
-    
+
     top: 400px;
     left: 0;
-    
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -151,7 +151,7 @@ const Player = styled(ReactPlayer)`
 
 const Video = styled.video`
     position: absolute;
-    
+
     width: 120%;
     height: 100%;
 `;
@@ -178,12 +178,35 @@ export const Slide = React.memo(function (StackedCarouselSlideProps) {
         setColors(shuffledArray);
     }
 
+    const ref = useRef(null);
+
+    // isCenterSlide.addListener((isCenter) => {
+    //     if (isCenter) {
+    //         const observedVideoElement = ref && ref.current;
+    //         observedVideoElement.play();
+    //     } else {
+    //         const observedVideoElement = ref && ref.current;
+    //         observedVideoElement.pause();
+    //     }
+    // });
+
+    useEffect(() => {
+        if (isCenterSlide) {
+            const observedVideoElement = ref && ref.current;
+            observedVideoElement.play();
+        } else {
+            const observedVideoElement = ref && ref.current;
+            observedVideoElement.pause();
+        }
+    }, [isCenterSlide]);
+
     return (
         <div className="card-card" style={{border: `solid 2px ${colors[dataIndex]}`}} draggable={false}>
             <Container onClick={() => {
                 if (!isCenterSlide) swipeTo(slideIndex);
             }}>
                 <Video
+                    ref={ref}
                     src={video}
                     autoPlay={isCenterSlide}       // 자동 재생 on
                     controls={false}       // 플레이어 컨트롤 노출 여부   // 플레이어 초기 포스터 사진
