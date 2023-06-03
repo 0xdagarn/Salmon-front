@@ -54,7 +54,7 @@ function Header() {
     return (
         <Container>
             <Logo>
-                Roamg
+                Roam
             </Logo>
             <Center>
                 Ukraine War
