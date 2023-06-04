@@ -14,37 +14,37 @@ import { Slide } from "./Slide";
 const data = [
   {
     video: "https://bit.ly/3MM7sw9",
-    text: "Ukraine Soliger Begging for life",
+    text: "Ukrain Woman being gang raped",
     user: "ox...4ever",
     image: "https://i.ytimg.com/vi/2QZUxjzYVzE/maxresdefault.jpg",
   },
   {
     video: "https://bit.ly/3MQ4t5P",
-    text: "Ukraine Misusing their war fund",
+    text: "Ukraine Soliger Begging for life",
     user: "Hichichi",
     image: "https://i.ytimg.com/vi/2QZUxjzYVzE/maxresdefault.jpg",
   },
   {
     video: "https://bit.ly/45Y7SbJ",
-    text: "Ukrain Woman being gang raped",
+    text: "War front gun fire",
     user: "SassyCat",
     image: "https://i.ytimg.com/vi/2QZUxjzYVzE/maxresdefault.jpg",
   },
   {
     video: "https://bit.ly/3C8FCVW",
-    text: "War front gun fire",
+    text: "Drone footage",
     user: "Willpowerade",
     image: "https://i.ytimg.com/vi/2QZUxjzYVzE/maxresdefault.jpg",
   },
   {
     video: "https://bit.ly/3qogsAb",
-    text: "Ukrain Soldiers dont trust their govenment",
+    text: "Ukraine Misusing their war fund",
     user: "WorldofArt",
     image: "https://i.ytimg.com/vi/2QZUxjzYVzE/maxresdefault.jpg",
   },
   {
     video: "https://bit.ly/42gFGxu",
-    text: "Drone footage",
+    text: "Ukrain Soldiers dont trust their govenment",
     user: "ApocalypticApes",
     image: "https://i.ytimg.com/vi/2QZUxjzYVzE/maxresdefault.jpg",
   },
