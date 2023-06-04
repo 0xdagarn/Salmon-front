@@ -14,37 +14,37 @@ import { Slide } from "./Slide";
 const data = [
   {
     video: "https://bit.ly/3MM7sw9",
-    text: "Russia’s First Attack on Ukraine",
+    text: "Ukraine Soliger Begging for life",
     user: "ox...4ever",
     image: "https://i.ytimg.com/vi/2QZUxjzYVzE/maxresdefault.jpg",
   },
   {
     video: "https://bit.ly/3MQ4t5P",
-    text: "Russia’s First Attack on Ukraine",
+    text: "Ukraine Misusing their war fund",
     user: "Hichichi",
     image: "https://i.ytimg.com/vi/2QZUxjzYVzE/maxresdefault.jpg",
   },
   {
     video: "https://bit.ly/45Y7SbJ",
-    text: "Russia’s First Attack on Ukraine",
+    text: "Ukrain Woman being gang raped",
     user: "SassyCat",
     image: "https://i.ytimg.com/vi/2QZUxjzYVzE/maxresdefault.jpg",
   },
   {
     video: "https://bit.ly/3C8FCVW",
-    text: "Russia’s First Attack on Ukraine",
+    text: "War front gun fire",
     user: "Willpowerade",
     image: "https://i.ytimg.com/vi/2QZUxjzYVzE/maxresdefault.jpg",
   },
   {
     video: "https://bit.ly/3qogsAb",
-    text: "Russia’s First Attack on Ukraine",
+    text: "Ukrain Soldiers dont trust their govenment",
     user: "WorldofArt",
     image: "https://i.ytimg.com/vi/2QZUxjzYVzE/maxresdefault.jpg",
   },
   {
     video: "https://bit.ly/42gFGxu",
-    text: "Russia’s First Attack on Ukraine",
+    text: "Drone footage",
     user: "ApocalypticApes",
     image: "https://i.ytimg.com/vi/2QZUxjzYVzE/maxresdefault.jpg",
   },
